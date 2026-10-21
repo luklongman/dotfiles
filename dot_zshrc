@@ -1,0 +1,73 @@
+# 2026-10-22
+# To learn my Zsh configuration:
+# how to replace path to use $HOME instead of /Users/longman?
+
+autoload -U compinit && compinit
+
+# --- Powerlevel10k Instant Prompt ---
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# --- Oh My Zsh Configuration ---
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+plugins=(you-should-use git zsh-completions history aws poetry macos jsontools copydir copyfile zsh-autosuggestions zsh-syntax-highlighting web-search sudo iterm2 uv uv-env zsh-interactive-cd zsh-navigation-tools stripe)
+
+# --- Source Oh My Zsh ---
+source $ZSH/oh-my-zsh.sh
+
+# --- Custom OMZ Configuration (Optional) ---
+
+# --- Custom PATH additions ---
+
+# DaVinci Resolve Script API Environment Variables
+export RESOLVE_SCRIPT_API="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Developer/Scripting"
+export RESOLVE_SCRIPT_LIB="/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Libraries/Fusion/fusionscript.so"
+export PYTHONPATH="$PYTHONPATH:$RESOLVE_SCRIPT_API/Modules/"
+
+# LM Studio CLI (lms)
+export PATH="$PATH:$HOME/.cache/lm-studio/bin"
+
+# nvm setup
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+#CPM cache for CMake
+export CPM_SOURCE_CACHE="$HOME/.cache/CPM"
+
+# --- End Custom PATH additions ---
+
+# --- Powerlevel10k Prompt Sourcing ---
+# Source the Powerlevel10k theme and user config *after* other settings.
+# source ~/powerlevel10k/powerlevel10k.zsh-theme
+### The above line removed due to redundancy
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+
+
+# bun completions
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+alias obs="obsidian"
+
+# Vite+ bin (https://viteplus.dev)
+. "$HOME/.config/vite-plus/env"
+
+
+# bao
+
+alias bao-stripe='uv run --directory $HOME/Documents/myCode/stripeScript --env-file .env stripescript'
