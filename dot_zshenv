@@ -1,0 +1,8 @@
+. "$HOME/.cargo/env"
+
+# uv
+export PATH="$HOME/.local/bin:$PATH"
+
+# Vite+ bin (https://viteplus.dev)
+# . "$HOME/.config/vite-plus/env"
+# commented out because zshrc already sources it.

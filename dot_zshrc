@@ -71,3 +71,6 @@ alias obs="obsidian"
 # bao
 
 alias bao-stripe='uv run --directory $HOME/Documents/myCode/stripeScript --env-file .env stripescript'
+
+# Chezmoi alias
+alias cz="chezmoi"

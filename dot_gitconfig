@@ -1,0 +1,12 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Longman
+	email = 75369385+luklongman@users.noreply.github.com
+[lfs]
+	concurrenttransfers = 10
+[core]
+	excludesfile = /Users/longman/.gitignore_global
