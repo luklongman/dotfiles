@@ -135,10 +135,14 @@ brew "borgbackup/tap/borgbackup-fuse"
 brew "nikolaeu/numi/numi-cli", trusted: true
 # Stripe CLI utility
 brew "stripe/stripe-cli/stripe"
+# Sound and music editor
+cask "ableton-live-suite"
 # Display management tool
 cask "betterdisplay"
 # 3D creation suite
 cask "blender"
+# Flexible space to create your own interactive software
+cask "cycling74-max"
 # Control inputs and outputs on a Dante network
 cask "dante-controller"
 # Browser for SQLite databases
@@ -166,6 +170,8 @@ cask "obsidian"
 cask "praat"
 # Flexible software sketchbook and a language for learning how to code
 cask "processing"
+# Collection of apps available by subscription
+cask "setapp"
 # App that enables mouse-free UI interaction
 cask "shortcat"
 # Tool for creating dynamic digital art
