@@ -1,0 +1,15 @@
+#!/bin/bash
+# Brewfile hash tracking: {{ include "Brewfile" | sha256sum }}
+
+echo "Installing selected Homebrew packages..."
+
+brew bundle --file=/dev/stdin <<EOF
+tap "homebrew/cask"
+tap "homebrew/bundle"
+
+{{ range .selectedPackages -}}
+{{ . }}
+{{ end -}}
+EOF
+
+echo "Installation complete!"

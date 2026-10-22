@@ -1,0 +1,16 @@
+{{- $brewfileContent := include "Brewfile" -}}
+{{- $lines := splitList "\n" $brewfileContent -}}
+
+{{- $packages := list -}}
+
+{{- range $line := $lines -}}
+  {{- $trimmed := trim $line -}}
+  {{- if or (hasPrefix "cask " $trimmed) (hasPrefix "brew " $trimmed) -}}
+    {{- $packages = append $packages $trimmed -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $selectedPackages := promptMultichoice "Select software to install on this machine:" $packages -}}
+
+[data]
+  selectedPackages = {{ $selectedPackages | toToml }}
