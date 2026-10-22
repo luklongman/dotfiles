@@ -1,9 +1,8 @@
-tap "borgbackup/tap"
+tap "borgbackup/tap", trusted: true
 tap "nikolaeu/numi"
-tap "stripe/stripe-cli"
-tap "supabase/tap"
+tap "stripe/stripe-cli", trusted: true
+tap "supabase/tap", trusted: true
 tap "teddychan/tap"
-tap "twitchdev/twitch"
 # Planetarium for your terminal
 brew "astroterm"
 # Core application library for C
@@ -130,8 +129,12 @@ brew "yt-dlp"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Deduplicating archiver with compression and authenticated encryption
+brew "borgbackup/tap/borgbackup-fuse"
 # Smart calculator
 brew "nikolaeu/numi/numi-cli", trusted: true
+# Stripe CLI utility
+brew "stripe/stripe-cli/stripe"
 # Display management tool
 cask "betterdisplay"
 # 3D creation suite
@@ -140,23 +143,41 @@ cask "blender"
 cask "dante-controller"
 # Browser for SQLite databases
 cask "db-browser-for-sqlite"
+# DX7 FM synthesiser
+cask "dexed"
 # Voice and text chat software
 cask "discord"
+# Disk management tool
+cask "diskcatalogmaker"
 cask "font-hack-nerd-font"
+# Web browser
+cask "google-chrome"
 # Ambisonic audio plug-in suite up to 7th order as VST2, LV2 and Standalones
 cask "iem-plugin-suite"
+# Keyboard customiser
+cask "karabiner-elements"
 # Open-source keystroke visualiser
 cask "keycastr"
+# Open-source software for live streaming and screen recording
+cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Doing phonetics by computer
+cask "praat"
+# Flexible software sketchbook and a language for learning how to code
+cask "processing"
 # App that enables mouse-free UI interaction
 cask "shortcat"
+# Tool for creating dynamic digital art
+cask "touchdesigner"
 # Multimedia player
 cask "vlc"
 # Desktop Backup Client for Borg
 cask "vorta"
 # USB serial driver
 cask "wch-ch34x-usb-serial-driver"
+# Native desktop client for WhatsApp
+cask "whatsapp"
 # Cangjie and Simplex Traditional Chinese input method
 cask "teddychan/tap/yahoo-keykey-2", trusted: true
 vscode "076923.python-image-preview"
