@@ -1,0 +1,286 @@
+tap "borgbackup/tap"
+tap "nikolaeu/numi"
+tap "stripe/stripe-cli"
+tap "supabase/tap"
+tap "teddychan/tap"
+tap "twitchdev/twitch"
+# Planetarium for your terminal
+brew "astroterm"
+# Core application library for C
+brew "glib"
+# Deduplicating archiver with compression and authenticated encryption
+brew "borgbackup", link: false
+# Vector graphics library with cross-device output support
+brew "cairo"
+# Object-file caching compiler wrapper
+brew "ccache"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Cross-platform make
+brew "cmake"
+# Console Matrix
+brew "cmatrix"
+# Shell script to build fancy DMGs
+brew "create-dmg"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# TIFF library and utilities
+brew "libtiff"
+# Utility to configure multi-display resolutions and arrangements
+brew "displayplacer"
+# Perl lib for reading and writing EXIF metadata
+brew "exiftool"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Identify or delete duplicate files
+brew "fdupes"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Subtitle renderer for the ASS/SSA subtitle format
+brew "libass"
+# Blu-Ray disc playback library for media players like VLC
+brew "libbluray"
+# C library for files containing sampled sound
+brew "libsndfile"
+# Secure Reliable Transport
+brew "srt"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
+# Play, record, convert, and stream many audio and video codecs
+brew "ffmpeg-full", link: true
+# C routines to compute the Discrete Fourier Transform
+brew "fftw"
+# Cross-platform library for audio I/O
+brew "portaudio"
+# Real-time software synthesizer based on the SoundFont 2 specs
+brew "fluid-synth"
+# Libraries to talk to Microsoft SQL Server and Sybase databases
+brew "freetds"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Git extension for versioning large files
+brew "git-lfs"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
+# Graphical user interface for smartctl
+brew "gsmartcontrol"
+# Improved top (interactive process viewer)
+brew "htop"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c@76"
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Open source neural network based chess engine
+brew "lc0"
+# Lightweight Open Sound Control implementation
+brew "liblo"
+# Library to render SVG files using Cairo
+brew "librsvg"
+# Clone of ls with colorful output, file type icons, and more
+brew "lsd"
+# Simple tool to make locally trusted development certificates
+brew "mkcert"
+# Small build system for use with gyp or CMake
+brew "ninja"
+# Port scanning utility for large networks
+brew "nmap"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Optimized BLAS library
+brew "openblas"
+# General-purpose scripting language
+brew "php", restart_service: :changed
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
+# Cross-platform application and UI framework
+brew "qt"
+# Find duplicate files based on content (NOT file names)
+brew "rdfind"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Change macOS audio source from the command-line
+brew "switchaudio-osx"
+# Enables extra languages support for Tesseract
+brew "tesseract-lang"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# Compress/expand executable files
+brew "upx"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# Internet file retriever
+brew "wget"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# Smart calculator
+brew "nikolaeu/numi/numi-cli", trusted: true
+# Display management tool
+cask "betterdisplay"
+# Control inputs and outputs on a Dante network
+cask "dante-controller"
+# Browser for SQLite databases
+cask "db-browser-for-sqlite"
+# Voice and text chat software
+cask "discord"
+cask "font-hack-nerd-font"
+# Ambisonic audio plug-in suite up to 7th order as VST2, LV2 and Standalones
+cask "iem-plugin-suite"
+# Open-source keystroke visualiser
+cask "keycastr"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# App that enables mouse-free UI interaction
+cask "shortcat"
+# Multimedia player
+cask "vlc"
+# Desktop Backup Client for Borg
+cask "vorta"
+# USB serial driver
+cask "wch-ch34x-usb-serial-driver"
+# Cangjie and Simplex Traditional Chinese input method
+cask "teddychan/tap/yahoo-keykey-2", trusted: true
+vscode "076923.python-image-preview"
+vscode "acidic9.p5js-snippets"
+vscode "akamud.vscode-javascript-snippet-pack"
+vscode "almenon.arepl"
+vscode "antfu.slidev"
+vscode "batisteo.vscode-django"
+vscode "bbenoist.qml"
+vscode "bradlc.vscode-tailwindcss"
+vscode "burkeholland.simple-react-snippets"
+vscode "charliermarsh.ruff"
+vscode "chris-noring.node-snippets"
+vscode "chrisdias.vscode-opennewinstance"
+vscode "christian-kohler.npm-intellisense"
+vscode "christian-kohler.path-intellisense"
+vscode "cschlosser.doxdocgen"
+vscode "davidanson.vscode-markdownlint"
+vscode "dbaeumer.vscode-eslint"
+vscode "doggy8088.quicktype-refresh"
+vscode "donjayamanne.python-environment-manager"
+vscode "donjayamanne.python-extension-pack"
+vscode "dracula-theme.theme-dracula"
+vscode "dsznajder.es7-react-js-snippets"
+vscode "dtoplak.vscode-glsllint"
+vscode "ducphamngoc.codevisualizer"
+vscode "eamodio.gitlens"
+vscode "ecmel.vscode-html-css"
+vscode "emmanuelbeziat.vscode-great-icons"
+vscode "esbenp.prettier-vscode"
+vscode "firefox-devtools.vscode-firefox-debug"
+vscode "formulahendry.code-runner"
+vscode "github.remotehub"
+vscode "github.vscode-pull-request-github"
+vscode "gruntfuggly.todo-tree"
+vscode "hbenl.vscode-test-explorer"
+vscode "humao.rest-client"
+vscode "idleberg.applescript"
+vscode "idleberg.jxa"
+vscode "iulian-radu-at.find-unused-exports"
+vscode "jacqueslucke.blender-development"
+vscode "jasonnutter.search-node-modules"
+vscode "jeff-hykin.better-cpp-syntax"
+vscode "jock.svg"
+vscode "joelharkes.eml-email-viewer"
+vscode "josetr.cmake-language-support-vscode"
+vscode "juanallo.vscode-dependency-cruiser"
+vscode "kevinrose.vsc-python-indent"
+vscode "kleber-swf.unity-code-snippets"
+vscode "labnol.google-apps-script"
+vscode "littlefoxteam.vscode-python-test-adapter"
+vscode "mechatroner.rainbow-csv"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-dotnettools.csdevkit"
+vscode "ms-dotnettools.csharp"
+vscode "ms-dotnettools.vscode-dotnet-runtime"
+vscode "ms-playwright.playwright"
+vscode "ms-python.debugpy"
+vscode "ms-python.isort"
+vscode "ms-python.mypy-type-checker"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode-remote.remote-wsl"
+vscode "ms-vscode.azure-repos"
+vscode "ms-vscode.cmake-tools"
+vscode "ms-vscode.cpp-devtools"
+vscode "ms-vscode.cpptools"
+vscode "ms-vscode.cpptools-extension-pack"
+vscode "ms-vscode.cpptools-themes"
+vscode "ms-vscode.powershell"
+vscode "ms-vscode.remote-explorer"
+vscode "ms-vscode.remote-repositories"
+vscode "ms-vscode.test-adapter-converter"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "natqe.reload"
+vscode "nhoizey.gremlins"
+vscode "njpwerner.autodocstring"
+vscode "oderwat.indent-rainbow"
+vscode "oouo-diogo-perdigao.docthis"
+vscode "oxc.oxc-vscode"
+vscode "pkief.material-icon-theme"
+vscode "pranaygp.vscode-css-peek"
+vscode "pulkitgangwar.nextjs-snippets"
+vscode "redhat.vscode-xml"
+vscode "ritwickdey.liveserver"
+vscode "rust-lang.rust-analyzer"
+vscode "rxliuli.tsx"
+vscode "samplavigne.p5-vscode"
+vscode "serkonda7.vscode-vba"
+vscode "sidthesloth.html5-boilerplate"
+vscode "slevesque.shader"
+vscode "stripe.vscode-stripe"
+vscode "sukumo28.wav-preview"
+vscode "supabase.vscode-supabase-extension"
+vscode "suzushiro.musicxml-preview"
+vscode "svelte.svelte-vscode"
+vscode "tamasfe.even-better-toml"
+vscode "tobiah.unity-tools"
+vscode "tomoki1207.pdf"
+vscode "tqdv.overpassql-syntax"
+vscode "twxs.cmake"
+vscode "upstash.context7-mcp"
+vscode "usernamehw.errorlens"
+vscode "visualstudiotoolsforunity.vstuc"
+vscode "vitest.explorer"
+vscode "voidzero.vite-plus-extension-pack"
+vscode "vscodevim.vim"
+vscode "wallabyjs.quokka-vscode"
+vscode "wholroyd.jinja"
+vscode "wix.vscode-import-cost"
+vscode "wscats.html-snippets"
+vscode "xabikos.javascriptsnippets"
+vscode "yclepticstudios.unity-snippets"
+vscode "yzhang.markdown-all-in-one"
+vscode "zeshuaro.vscode-python-poetry"
+vscode "zignd.html-css-class-completion"
+uv "ruff"
+npm "lighthouse"
+npm "pnpm"
