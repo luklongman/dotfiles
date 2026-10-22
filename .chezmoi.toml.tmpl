@@ -1,8 +1,10 @@
-{{- $brewfileContent := include "Brewfile" -}}
+{{- /* 1. Read raw Brewfile content from its nested path */ -}}
+{{- $brewfileContent := include "dot_config/homebrew/Brewfile" -}}
 {{- $lines := splitList "\n" $brewfileContent -}}
 
 {{- $packages := list -}}
 
+{{- /* 2. Extract entries like cask "vscode" or brew "git" */ -}}
 {{- range $line := $lines -}}
   {{- $trimmed := trim $line -}}
   {{- if or (hasPrefix "cask " $trimmed) (hasPrefix "brew " $trimmed) -}}
@@ -10,7 +12,8 @@
   {{- end -}}
 {{- end -}}
 
-{{- $selectedPackages := promptMultichoice "Select software to install on this machine:" $packages -}}
+{{- /* 3. Prompt with interactive checklist */ -}}
+{{- $selectedPackages := promptMultichoice "Welcome. Please select softwares to install on this machine:" $packages -}}
 
 [data]
   selectedPackages = {{ $selectedPackages | toToml }}
