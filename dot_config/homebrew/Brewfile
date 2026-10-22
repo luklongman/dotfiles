@@ -134,6 +134,8 @@ brew "zsh-syntax-highlighting"
 brew "nikolaeu/numi/numi-cli", trusted: true
 # Display management tool
 cask "betterdisplay"
+# 3D creation suite
+cask "blender"
 # Control inputs and outputs on a Dante network
 cask "dante-controller"
 # Browser for SQLite databases
