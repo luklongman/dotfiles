@@ -9,4 +9,16 @@
 [lfs]
 	concurrenttransfers = 10
 [core]
-	excludesfile = /Users/longman/.gitignore_global
+	excludesfile = $HOME/.gitignore_global
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	side-by-side = true
+	keep-plus-minus-markers = true
+	navigate = true
+[merge]
+	tool = delta
+	conflictstyle = diff3
+[diff]
+	colorMoved = default
