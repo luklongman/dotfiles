@@ -7,6 +7,8 @@ tap "teddychan/tap"
 brew "astroterm"
 # Core application library for C
 brew "glib"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # Deduplicating archiver with compression and authenticated encryption
 brew "borgbackup", link: false
 # Vector graphics library with cross-device output support
@@ -29,6 +31,8 @@ brew "libtiff"
 brew "displayplacer"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
+# Modern, maintained replacement for ls
+brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Identify or delete duplicate files
@@ -63,6 +67,8 @@ brew "fzf"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Git extension for versioning large files
 brew "git-lfs"
 # Package compiler and linker metadata toolkit
@@ -115,6 +121,8 @@ brew "ripgrep"
 brew "switchaudio-osx"
 # Enables extra languages support for Tesseract
 brew "tesseract-lang"
+# Official tldr client written in Rust
+brew "tlrc"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
 # Compress/expand executable files
@@ -125,14 +133,14 @@ brew "uv"
 brew "wget"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 # Deduplicating archiver with compression and authenticated encryption
 brew "borgbackup/tap/borgbackup-fuse"
-# Smart calculator
-brew "nikolaeu/numi/numi-cli", trusted: true
 # Stripe CLI utility
 brew "stripe/stripe-cli/stripe"
 # Sound and music editor
@@ -153,6 +161,8 @@ cask "dexed"
 cask "discord"
 # Disk management tool
 cask "diskcatalogmaker"
+# Web browser
+cask "firefox"
 cask "font-hack-nerd-font"
 # Web browser
 cask "google-chrome"
