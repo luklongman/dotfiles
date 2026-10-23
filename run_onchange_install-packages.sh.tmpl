@@ -3,13 +3,20 @@
 
 echo "Installing selected Homebrew packages..."
 
-brew bundle --file=/dev/stdin <<EOF
-tap "homebrew/cask"
-tap "homebrew/bundle"
+# Create a temporary file for the generated Brewfile
+BREWFILE_TMP="$(mktemp)"
 
+# Write the template-rendered packages into the temp file (without deprecated taps)
+cat << EOF > "$BREWFILE_TMP"
 {{ range .selectedPackages -}}
 {{ . }}
 {{ end -}}
 EOF
+
+# Run brew bundle attached to the terminal for real-time progress display
+brew bundle --file="$BREWFILE_TMP" </dev/tty >/dev/tty 2>&1
+
+# Clean up the temporary file
+rm -f "$BREWFILE_TMP"
 
 echo "Installation complete!"
