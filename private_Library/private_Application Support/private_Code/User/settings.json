@@ -1,0 +1,173 @@
+{
+    "terminal.external.osxExec": "iTerm.app",
+    "chat.mcp.discovery.enabled": {
+        "claude-desktop": true,
+        "windsurf": true,
+        "cursor-global": true,
+        "cursor-workspace": true
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.zoomLevel": 2,
+    "[python]": {
+        "editor.formatOnType": false,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            // "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        } 
+
+    },
+    "python.defaultInterpreterPath": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3",
+    "security.workspace.trust.untrustedFiles": "open",
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "explorer.confirmDelete": false,
+    "editor.accessibilitySupport": "off",
+    "explorer.confirmDragAndDrop": false,
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "chat.editing.alwaysSaveWithGeneratedChanges": true,
+    "npm.keybindingsChangedWarningShown": true,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "python.createEnvironment.trigger": "off",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "workbench.experimental.share.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false,
+        "javascript": true
+    },
+    "github.copilot.chat.codesearch.enabled": true,
+    "github.copilot.chat.agent.thinkingTool": true,
+    "github.copilot.chat.search.keywordSuggestions": true,
+    "explorer.confirmPasteNative": false,
+    "git.confirmSync": false,
+    "pythonTestExplorer.testFramework": "pytest",
+    "pythonTestExplorer.testplanEnabled": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "github.copilot.chat.languageContext.typescript.enabled": true,
+    "github.copilot.chat.languageContext.inline.typescript.enabled": true,
+    "github.copilot.chat.languageContext.fix.typescript.enabled": true,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "[markdown]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
+    },
+    "slidev.dev-command": "pnpm slidev ${args}",
+    "svelte.enable-ts-plugin": true,
+    "editor.lineHeight": 2,
+    "[svelte]": {},
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]",
+        "REVIEW"
+    ],
+    "chat.agent.maxRequests": 30,
+    "inlineChat.enableV2": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "chat.tools.autoApprove": true,
+    "chat.tools.terminal.autoApprove": {
+        "rm": true,
+        "rmdir": true,
+        "del": true,
+        "kill": true,
+        "curl": true,
+        "wget": true,
+        "eval": true,
+        "chmod": true,
+        "chown": true,
+        "/^Remove-Item\\b/i": true,
+        "/^cd /Users/longman/Library/Application\\\\ Support/Blender/5\\.0/scripts/addons/euclidean_rhythm_bounce && python3 -m py_compile __init__\\.py bouncing_v3\\.py && echo \"✓ Syntax OK\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python3 -m ast \"/Users/longman/Library/Application Support/Blender/5\\.0/scripts/addons/euclidean_rhythm_bounce/bouncing_v3\\.py\" 2>&1 \\| head -50$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python3 -m ast \"/Users/longman/Library/Application Support/Blender/5\\.0/scripts/addons/euclidean_rhythm_bounce/__init__\\.py\" && echo \"✓ Syntax OK\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "npm install": true,
+        "npm run dev": true
+    },
+    "chat.mcp.autostart": "newAndOutdated",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.svg": "default"
+    },
+    "window.commandCenter": false,
+    "chat.mcp.access": "all",
+    "blender.scripts.directories": [
+        {
+            "path": "/Users/longman/Desktop",
+            "name": ""
+        },
+        {
+            "path": "/Users/longman/Library/Application Support/Blender/5.0/scripts/addons/Euclidean Addon folder",
+            "name": ""
+        }
+    ],
+    "chat.editing.confirmEditRequestRemoval": false,
+    "blender.executables": [
+        {
+            "name": "",
+            "path": "/Applications/Blender.app/Contents/MacOS/blender",
+            "isDefault": true
+        }
+    ],
+    "chat.editing.autoAcceptDelay": 5,
+    "workbench.settings.applyToAllProfiles": [
+        "chat.editing.autoAcceptDelay"
+    ],
+    "chat.tools.global.autoApprove": true,
+    "workbench.secondarySideBar.defaultVisibility": "visible",
+    "security.promptForLocalFileProtocolHandling": false,
+    "workbench.browser.openLocalhostLinks": false,
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
+    "todo-tree.ripgrep.ripgrep": "/opt/homebrew/bin/rg",
+    "console-ninja.featureSet": "Community",
+    "github.copilot.chat.newWorkspace.useContext7": true,
+    "js/ts.updateImportsOnFileMove.enabled": "always",
+    "markdown.updateLinksOnFileMove.enabled": "always",
+    "editor.quickSuggestionsDelay": 0,
+    "editor.quickSuggestions": {
+
+        "other": "offWhenInlineCompletions",
+        "comments": "off",
+        "strings": "on"
+    },
+    "githubPullRequests.createOnPublishBranch": "never",
+    "chat.mcp.gallery.enabled": true,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "chat.viewSessions.orientation": "stacked",
+    "debug.inlineValues": "on",
+    "debugpy.showPythonInlineValues": true,
+    "eslint.run": "onSave",
+    "window.customTitleBarVisibility": "never",
+    "workbench.activityBar.compact": true,
+    "python.analysis.enablePytestSupport": false
+}

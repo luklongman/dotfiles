@@ -89,7 +89,9 @@ function brew-dump() {
 
 eval "$(fzf --zsh)" 
 
-alias ls="eza --color=always --long --git --icons=always --no-user --no-permissions --sort=newest --group-directories-first --time-style=iso"
+
+# eza as default ls replacement, with color, icons, and git integration
+alias ls="eza --color=always --long --git --git-repos --icons=always --no-user --no-permissions --sort=newest --group-directories-first --time-style=iso --tree --level=2 --no-filesize"
 
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
 export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
